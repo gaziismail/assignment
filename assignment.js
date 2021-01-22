@@ -1,3 +1,5 @@
+// https://github.com/gaziismail/assignment
+
 // kilometer to meter
 function kilometerToMeter(kilometer) {
     var meter = kilometer * 1000;
@@ -22,25 +24,26 @@ function hotelCost(days) {
 
     if (days <= 10) {
 
-        var totalCost = 100 * days;
+        var totalCost = days * 100;
 
     }
     else if (days <= 20) {
 
-        var firstitem = 10 * 100;
+        var firstItem = 10 * 100;
         var remaing = days - 10;
-        var seconditem = remaing * 80;
-        var totalCost = firstitem + seconditem;
+        var secondItem = remaing * 80;
+        var totalCost = firstItem + secondItem;
 
     }
     else {
 
-        var firstitem = 10 * 100;
-        var seconditem = 10 * 80;
+        var firstItem = 10 * 100;
+        var secondItem = 10 * 80;
         var remaing = days - 20;
-        var thirditem = remaing * 50;
+        var thirdItem = remaing * 50;
 
-        var totalCost = firstitem + seconditem + thirditem;
+        var totalCost = firstItem + secondItem + thirdItem;
 
     }
     return totalCost;
+}
